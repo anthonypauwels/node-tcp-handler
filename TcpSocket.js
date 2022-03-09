@@ -1,9 +1,7 @@
-import jsonSocket from 'json-socket';
-
 export default class TcpSocket {
     constructor(baseSocket)
     {
-        this.socket = new jsonSocket( baseSocket );
+        this.socket = baseSocket;
         this.events = {};
 
         this._on( 'message', request => {

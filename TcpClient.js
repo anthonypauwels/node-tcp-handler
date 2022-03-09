@@ -1,4 +1,5 @@
 import net from 'net';
+import jsonSocket from 'json-socket';
 
 export default class TcpClient {
     constructor()

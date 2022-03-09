@@ -1,5 +1,6 @@
 import net from 'net';
-import TcpSocket from "./TcpSocket";
+import jsonSocket from 'json-socket';
+import TcpSocket from "./TcpSocket.js";
 
 export default class TcpServer {
     constructor()
@@ -15,7 +16,7 @@ export default class TcpServer {
     onConnect(callback)
     {
         this.server.on( 'connection', socket => {
-            callback( new TcpSocket( socket ) );
+            callback( new TcpSocket( new jsonSocket( socket ) ) );
         } );
     }
 }
