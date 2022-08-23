@@ -1,6 +1,6 @@
-import TcpServer from "./TcpServer.js";
-import TcpClient from "./TcpClient.js";
-import TcpSocket from "./TcpSocket.js";
+import TcpServer from "./lib/TcpServer.js";
+import TcpClient from "./lib/TcpClient.js";
+import TcpSocket from "./lib/TcpSocket.js";
 
 export {
     TcpServer,
